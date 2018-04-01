@@ -1,0 +1,380 @@
+/**
+ * File Name: black.css
+ */
+
+/* Gradient BG for header and download app section */
+.gradient-BG1 {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(22, 22, 22, 0.97)),
+		color-stop(1, rgba(41, 41, 41, 0.9))
+	);
+	background-image: -o-linear-gradient(right, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 100%);
+	background-image: -moz-linear-gradient(right, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 100%);
+	background-image: -webkit-linear-gradient(right, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 100%);
+	background-image: -ms-linear-gradient(right, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 100%);
+	background-image: linear-gradient(to right, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 100%);	
+}
+
+.gradient-BG2 {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(22, 22, 22, 0.97)),
+		color-stop(1, rgba(41, 41, 41, 0.9))
+	);
+	background-image: -o-linear-gradient(bottom, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 80%);
+	background-image: -moz-linear-gradient(bottom, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 80%);
+	background-image: -webkit-linear-gradient(bottom, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 80%);
+	background-image: -ms-linear-gradient(bottom, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 80%);
+	background-image: linear-gradient(to bottom, rgba(22, 22, 22, 0.97) 0%, rgba(41, 41, 41, 0.9) 80%);
+}
+
+/* Links Colors */
+a {
+	color: #222;
+}
+
+a:focus {
+	color: #222;
+}
+
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover, 
+h4 a:hover, 
+h5 a:hover, 
+h6 a:hover {
+	color: #222;
+	border-bottom-color: #222;
+}
+
+/* Subheaders */
+.subheader {
+	color: #777;
+}
+
+/* Colored Text */
+.colored {
+	color: #222;
+}
+
+/* Submit button */
+.submit[type="submit"],
+.submit[type="submit"].form-control,
+.submit[type="submit"],
+.submit[type="submit"].form-control {
+	background: #1a1a1a;
+}
+
+input.submit:hover,
+input.submit:focus,
+input.submit.form-control:hover,
+input.submit.form-control:focus {
+	background: #111;
+}
+
+/* Header form */
+#header-form {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+#header-form .form-group i {
+	color: #222;
+}
+
+/* Contact form submit button background */
+#contact-form input[type="submit"] {
+	background: #222;
+}
+
+/* Subscribe form submit background */
+.subscribe-form .icon-submit {
+	background: #222;
+}
+
+/* Logo */
+.logo-and-nav .logo {
+	border-top-color: #222;
+}
+
+.logo-and-nav .logo h3 strong {
+	color: #222;
+}
+
+/* Main menu */
+.main-menu > li > a:hover {
+	color: #222;
+}
+
+.main-menu > li:hover > a {
+	color: #222;
+}
+
+.main-menu > li > a.current {
+	color: #222;
+}
+
+.main-menu > li > a:before {
+	background: #222;
+}
+
+.main-menu li a + ul.dropdown-menu,
+.main-menu .megamenu {
+	border-top-color: #222;
+}
+
+.main-menu ul.dropdown-menu li a:hover,
+.main-menu ul.dropdown-menu li:hover > a {
+	color: #222;
+}
+
+.main-menu ul.dropdown-menu li a:hover:before,
+.main-menu ul.dropdown-menu li a.remove-link-arrow:hover i,
+.main-menu ul.dropdown-menu li:hover > a:before,
+.main-menu ul.dropdown-menu li:hover > a i {
+	color: #222;
+}
+
+.sf-arrows li > a.sf-with-ul:focus:after,
+.sf-arrows li:hover > a.sf-with-ul:after,
+.sf-arrows .sfHover > a.sf-with-ul:after {
+	color: #222;
+}
+
+.rm-menu-btn.is-active i {
+	background: #222;
+}
+
+/* Responsive menu */
+.rm-menu .slicknav_nav { 
+	border-top-color: #222;
+}
+
+.rm-menu .slicknav_nav a:hover {
+	color: #222;
+}
+
+.rm-menu .slicknav_nav a:hover:before,
+.rm-menu .slicknav_nav a.remove-link-arrow:hover i,
+.rm-menu .slicknav_nav:hover > a:before,
+.rm-menu .slicknav_nav:hover > a i {
+	color: #222;
+}
+
+.rm-menu .slicknav_nav a:hover a {
+	color: #222;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a a,
+.rm-menu .slicknav_nav .slicknav_open > a:hover a {
+	color: #222;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a {
+	color: #222;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a::before {
+	color: #222;
+}
+
+.rm-menu .slicknav_nav a:hover .slicknav_arrow {
+	border-color: #222;
+	color: #222;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a a + .slicknav_arrow {
+	border-color: #222;
+	background: #222;
+}
+
+/* Header scroll top button */
+.header-st:hover {
+	color: #222;
+}
+
+/* Flat section title */
+.flat-section-title::before,
+.flat-section-title::after {
+	background: rgba(34, 34, 34, 0.8);
+}
+
+/* App Screenshots */
+.screenshot-box a::after {
+	background: ;
+}
+
+/* Testmonials */
+.st-message::before {
+	background: #222;
+}
+
+.st-person a {
+	color: #222;
+}
+
+.forms-toggler small {
+	color: #222;
+}
+
+/* Contact tabs */
+.contact-tabs-titles li.ui-state-active a, 
+.contact-tabs-titles li.ui-state-active a:hover {
+	color: #222;
+}
+
+.contact-tabs-titles li.ui-state-active a i, 
+.contact-tabs-titles li.ui-state-active a:hover i {
+	background: #222;
+	border-color: #222;
+}
+
+/* Blog */
+.entry-meta a:hover,
+.entry-meta a:hover i {
+	color: #222;
+}
+
+/* Pagination */
+.pagination li.active a,
+.pagination li.active a:hover {
+	background: #222;
+}
+
+/* Search form */
+.search-form .search-submit[type="submit"]:hover {
+	color: #222;
+}
+
+/* Twitter widget */
+.tweet_list .tweet_time a:hover {
+	color: #222;
+}
+
+.tweet_list .tweet_time:hover::before {
+	color: #222;
+}
+
+/* Posts Tabs widget */
+.posts-tabs-nav li.ui-tabs-active {
+	border-top-color: #222;
+}
+
+.posts-tabs-nav .ui-tabs-active a {
+	color: #222;
+}
+
+.posts-list-content a.title:hover {
+	color: #222;
+}
+
+.posts-list-content a.info:hover {
+	color: #222;
+}
+
+.posts-list-content a.info:hover i {
+	color: #222;
+}
+
+/* Tags */
+.tags a:hover {
+	color: #222;
+	border-color: #222;
+}
+
+/* Single post author */
+.author-website:hover {
+	color: #222;
+}
+
+.author-website:hover i {
+	color: #222;
+}
+
+/* Related posts carousel */
+.sp-related-posts-carousel .owl-controls .owl-buttons  [class*="owl-"]:hover {
+    background: #222;
+}
+
+/* Comments */
+.comment-meta .date a.reply:hover {
+	color: #222;
+}
+
+/* Copyright message */
+.copyrights-message a:hover {
+	color: #222;
+}
+
+/**
+  Shortcodes
+ ========================== */
+
+/* Icons */
+.icon.clean i {
+	color: #222;
+}
+
+.icon.colorful i {
+	box-shadow: inset 0 0 0 1px #222;
+}
+
+.icon.colorful i::after {
+	background-color: #222;
+}
+
+/* Info Boxes */
+[class*="info-box"]:hover .info-box-icon.hover-clean i {
+	color: #222;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i {
+	box-shadow: inset 0 0 0 1px #222;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i::after {
+	background-color: #222;
+}
+
+/* Buttons */
+.button.transparent-colorful,
+.button.hover-transparent-colorful:hover {
+	color: #222;
+	border-color: #222;
+}
+
+.button.colorful,
+.button.hover-colorful:hover {
+	background: #222;
+	border-color: #222;
+}
+
+/* Pricing table */
+.pricing-table-column-header .column-price span {
+	color: #222;
+}
+
+.pricing-table-column-footer a:hover {
+	background: #222;
+	border-color: #222;
+}
+
+.featured-pricing-table-column .pricing-table-column-header .column-price {
+	background: #222;
+}
+
+.featured-pricing-table-column .pricing-table-column-footer a {
+	background: #222;
+	border-color: #222;
+}
+
+
+
+
+
+
+

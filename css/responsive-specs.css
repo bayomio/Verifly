@@ -1,0 +1,463 @@
+/**
+ * File Name: responsive-specs.css
+ */
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 01 ) - Responsive Specifications
+ *	-------------------------------------------------------------------------------
+ *
+ *  This part contains the responsive modifications for small devices widths
+ *
+ *	------
+ *
+ *  It has the following code:
+ *
+ *	   |
+ *	   |-->  [ 1 ] - Width From 1200px to 0
+ *	   |-->  [ 2 ] - Width From 992px to 0
+ *	   |-->  [ 3 ] - Width From 768px to 0
+ *	   |-->  [ 4 ] - Width From 480px to 0
+ *	   |-->  [ 5 ] - Width From 320px to 0
+ *	   |-->  [ 6 ] - Height Form 768px to 0
+ *	   |-->  [ 5 ] - Height Form Maximmum to 768px
+ *	   |-->  [ 8 ] - Height Form Maximmum to 900px
+ *
+ */
+
+
+/**
+ *  [ 1 ] - Width From 1200px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 1200px) {
+
+	/* Vertical Featured Image Container */
+	header .vf-image {
+		text-align: center !important
+	}
+
+	/* Header Form */
+	#header-form .form-group {
+		width: 183px;
+	}
+
+	/* Pricing Table */
+	.pricing-table-column {
+		margin-bottom: 40px;
+	}
+
+	.pricing-table [class*="col-"]:last-child .pricing-table-column {
+		margin-bottom: 0;
+	}
+
+
+}
+
+
+/**
+ *  [ 2 ] - Width From 992px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 992px) {
+
+	/* Header */
+	header {
+		height: auto !important;
+	}
+
+	.header-parallax,
+	.parallax-section {
+		background-attachment: scroll !important;
+		background-position: top center !important;
+	}
+
+	.header-featured-content {
+		padding: 120px 0 85px;
+		position: relative;
+	}
+
+	.header-featured-content.resp-pb-0 {
+		padding-bottom: 0 !important;
+	}
+
+	.header-center-box {
+		position: relative;
+		padding: 0 0 65px;
+		top: auto !important;
+		left: auto !important;
+		-webkit-transform: none !important;
+				transform: none !important;
+	}
+
+	.header-featured-content [class*="col-"]:last-child .header-center-box {
+		padding-bottom: 0;
+	}
+
+	#page-title .header-center-box {
+		padding: 20px 0;
+	}
+
+	/* Header Featured Title */
+	.header-featured-title {
+		text-align: center;
+	}
+
+	#page-title .header-featured-title {
+		/*text-align: left;*/
+	}
+
+	#page-title .breadcrumb {
+		position: initial;
+		text-align: center;
+		margin-top: 35px;
+	}
+
+	.header-featured-title.style1 h1::before,
+	.header-featured-title.style1 h1::before,
+	.header-featured-title.style2::before,
+	.header-featured-title.style2::before {
+		left: 50%;
+		margin-left: -20px;
+	}
+
+	.header-featured-title.style1 h1::after,
+	.header-featured-title.style1 h1::after,
+	.header-featured-title.style2::after,
+	.header-featured-title.style2::after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Header Featured Button Arrow */
+	.ftr-btn-arrow {
+		display: block;
+		margin: auto;
+		left: -25px;
+	}
+
+	/* Header Form */
+	#header-form .form-group {
+		width: 330px;
+		padding-bottom: 10px;
+	}
+
+	#header-form .form-group:nth-child(even) {
+		padding-right: 0;
+	}
+
+	#header-form .form-group:nth-child(even) i {
+		right: 18px;
+	}
+
+	#header-form .form-group:nth-last-child(1),
+	#header-form .form-group:nth-last-child(2) {
+		padding-bottom: 0;
+	}
+
+	#header-form .form-group:nth-child(1) label.error,
+	#header-form .form-group:nth-child(2) label.error {
+		position: relative;
+		bottom: 1px;
+		display: inline-block;
+	}
+
+	/* Arrow Down */
+	.arrow-down {
+		position: relative;
+		margin-bottom: 80px;
+		text-align: center;
+		left: auto !important;
+		bottom: auto !important;
+		-webkit-transform: none !important;
+				transform: none !important;
+	}
+
+	/* Vertical Featured Image Container */
+	.vf-image {
+		text-align: center !important;
+	}
+
+	.vf-image img {
+		max-height: 100% !important;
+	}
+
+	/* Modifing Last button if 2 buttons used in single slider slide */
+	header .button:last-child {
+		margin-top: 15px;
+	} 
+
+	/* Section Title */
+	.col-md-12 .flat-section-title,
+	.col-lg-12 .flat-section-title,
+	.col-xs-12 .flat-section-title,
+	.col-sm-12 .flat-section-title {
+		width: 100%;
+	}
+
+	/* Blog */
+	.post-content {
+		padding-right: 0;
+	}
+
+	.sidebar {
+		margin-top: 100px;
+	}
+
+	.sp-share {
+		margin-top: 30px;
+	}
+
+	/* Info Box */
+	[class*="col-"] .info-box1,
+	[class*="col-"] .info-box2 {
+		margin-bottom: 40px;
+	}
+
+	#pricing-plans [class*="col-"]:last-child .pricing-table-column {
+		margin-bottom: 0;
+	}
+
+	.hf-image img {
+		width: 100%;
+	}
+
+	/* Fun Facts Box */
+	.fun-facts-box {
+		margin-bottom: 50px;
+	}
+
+	[class*="col-"]:nth-last-child(1) .fun-facts-box,
+	[class*="col-"]:nth-last-child(2) .fun-facts-box {
+		margin-bottom: 0;
+	}
+
+	/* Clients */
+	.clients-grid li {
+		width: 50%;
+	}
+
+	/* Contact Info Box */
+	[class*="col-"] .contact-info-box {
+		margin-bottom: 40px;
+	}
+
+	[class*="col-"]:last-child .contact-info-box {
+		margin-bottom: 0;
+	}
+
+	/* Download App List */
+	.download-app-list {
+		width: 80%;
+		margin: auto;
+	}
+
+	.download-app-list li {
+		width: 50%;
+	}
+
+}
+
+
+/**
+ *  [ 3 ] - Width From 768px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 768px) {
+
+	/* Header Top Content */
+	.header-top-content {
+		text-align: center;
+		height: auto;
+	}
+
+	.header-top-content .social-icons {
+		float: none;
+		margin-top: 25px;
+	}
+
+	.header-featured-content {
+		padding-top: 190px;
+	}
+
+	/* Header Form */
+	#header-form .form-group {
+		width: 100%;
+		padding: 0 0 10px 0 !important;
+		margin-bottom: 0;
+	}
+
+	#header-form .form-group i {
+		right: 18px;
+	}
+
+
+	#header-form .form-group:last-child {
+		padding-bottom: 0 !important;
+	}
+
+	#header-form .form-group label.error {
+		position: relative;
+		bottom: 1px;
+		display: inline-block;
+	}
+
+	/* Header Scroll Top Button */
+	.header-st {
+		display: none;
+	}
+
+	/* Blog */
+	.sp-nav-next {
+		margin-top: 30px;
+	}
+
+	/* Footer Social Icons */
+	footer .social-icons {
+		float: none;
+		margin-top: 30px;
+	}
+
+	/* Setting Widths for Flat Section Title in some Sections */
+	#our-clients .flat-section-title,
+	#fun-facts .flat-section-title,
+	#testmonials .flat-section-title,
+	#pricing-plans .flat-section-title,
+	#subscribe .flat-section-title {
+		width: 90%;
+	}
+
+	/* Info Box */
+	.info-box {
+		padding-bottom: 35px;
+	}
+
+	/* Fun Facts Box */
+	[class*="col-"]:nth-last-child(1) .fun-facts-box {
+		/*margin-bottom: 0;*/
+	}
+
+	[class*="col-"]:nth-last-child(2) .fun-facts-box {
+		margin-bottom: 50px;
+	}
+
+	/* Custom Padding */
+	*[data-padding-left] {
+		padding-left: 0 !important;
+	}
+
+	*[data-padding-right] {
+		padding-right: 0 !important;
+	}
+
+	/* Set col- as default padding left and right */
+	[class*="col-"] {
+		padding-left: 15px !important;
+	}
+
+	[class*="col-"] {
+		padding-right: 15px !important;
+	}
+
+	/* Info Box */
+	.info-box1,
+	.info-box2 {
+		margin-bottom: 40px !important;
+	}
+
+	/* Download App List */
+	.download-app-list {
+		width: 60%;
+	}
+
+	.download-app-list li {
+		width: 100%;
+	}
+
+}
+
+
+/**
+ *  [ 4 ] - Width From 480px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 480px) {
+	
+	.vf-image img {
+		width: 100%;
+	}
+
+	/* Header Additional Addons */
+	.header-additional-addons {
+		display: none;
+	}
+
+	/* Clients */
+	.clients-grid li {
+		width: 100%;
+	}
+
+	/* Download App List */
+	.download-app-list {
+		width: 80%;
+	}
+
+
+}
+
+
+/**
+ *  [ 5 ] - Width From 320px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-width: 320px) {
+
+}
+
+
+
+/**
+ *  [ 6 ] - Height From 768px to 0
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (max-height : 768px) {
+
+
+
+}
+
+
+/**
+ *  [ 5 ] - Height From Maximmum to 768px
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (min-height : 768px) {
+
+
+
+}
+
+
+/**
+ *  [ 8 ] - Height From Maximmum to 900px
+ *	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+@media (min-height : 900px) {
+
+	#header-submit-message {
+		right: 30px;
+		left: auto;
+	}
+
+}
+
+
+

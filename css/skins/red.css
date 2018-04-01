@@ -1,0 +1,376 @@
+/**
+ * File Name: red.css
+ */
+
+/* Gradient BG for header and download app section */
+.gradient-BG1 {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(136, 18, 18, 0.97)),
+		color-stop(1, rgba(218, 36, 35, 0.9))
+	);
+	background-image: -o-linear-gradient(right, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 100%);
+	background-image: -moz-linear-gradient(right, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 100%);
+	background-image: -webkit-linear-gradient(right, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 100%);
+	background-image: -ms-linear-gradient(right, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 100%);
+	background-image: linear-gradient(to right, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 100%);	
+}
+
+.gradient-BG2 {
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0, rgba(136, 18, 18, 0.97)),
+		color-stop(1, rgba(218, 36, 35, 0.9))
+	);
+	background-image: -o-linear-gradient(bottom, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 80%);
+	background-image: -moz-linear-gradient(bottom, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 80%);
+	background-image: -webkit-linear-gradient(bottom, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 80%);
+	background-image: -ms-linear-gradient(bottom, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 80%);
+	background-image: linear-gradient(to bottom, rgba(136, 18, 18, 0.97) 0%, rgba(218, 36, 35, 0.9) 80%);
+}
+
+/* Links Colors */
+a {
+	color: #da1d1d;
+}
+
+a:focus {
+	color: #da1d1d;
+}
+
+h1 a:hover, 
+h2 a:hover, 
+h3 a:hover, 
+h4 a:hover, 
+h5 a:hover, 
+h6 a:hover {
+	color: #da1d1d;
+	border-bottom-color: #da1d1d;
+}
+
+/* Subheaders */
+.subheader {
+	color: #da1d1d;
+}
+
+/* Colored Text */
+.colored {
+	color: #da1d1d;
+}
+
+/* Submit button */
+.submit[type="submit"],
+.submit[type="submit"].form-control,
+.submit[type="submit"],
+.submit[type="submit"].form-control {
+	background: #da1d1d;
+}
+
+input.submit:hover,
+input.submit:focus,
+input.submit.form-control:hover,
+input.submit.form-control:focus {
+	background: #ce1e1e;
+}
+
+/* Header form */
+#header-form .form-group i {
+	color: #da1d1d;
+}
+
+/* Contact form submit button background */
+#contact-form input[type="submit"] {
+	background: #da1d1d;
+}
+
+/* Subscribe form submit background */
+.subscribe-form .icon-submit {
+	background: #da1d1d;
+}
+
+/* Logo */
+.logo-and-nav .logo {
+	border-top-color: #da1d1d;
+}
+
+.logo-and-nav .logo h3 strong {
+	color: #da1d1d;
+}
+
+/* Main menu */
+.main-menu > li > a:hover {
+	color: #da1d1d;
+}
+
+.main-menu > li:hover > a {
+	color: #da1d1d;
+}
+
+.main-menu > li > a.current {
+	color: #da1d1d;
+}
+
+.main-menu > li > a:before {
+	background: #da1d1d;
+}
+
+.main-menu li a + ul.dropdown-menu,
+.main-menu .megamenu {
+	border-top-color: #da1d1d;
+}
+
+.main-menu ul.dropdown-menu li a:hover,
+.main-menu ul.dropdown-menu li:hover > a {
+	color: #da1d1d;
+}
+
+.main-menu ul.dropdown-menu li a:hover:before,
+.main-menu ul.dropdown-menu li a.remove-link-arrow:hover i,
+.main-menu ul.dropdown-menu li:hover > a:before,
+.main-menu ul.dropdown-menu li:hover > a i {
+	color: #da1d1d;
+}
+
+.sf-arrows li > a.sf-with-ul:focus:after,
+.sf-arrows li:hover > a.sf-with-ul:after,
+.sf-arrows .sfHover > a.sf-with-ul:after {
+	color: #da1d1d;
+}
+
+.rm-menu-btn.is-active i {
+	background: #da1d1d;
+}
+
+/* Responsive menu */
+.rm-menu .slicknav_nav { 
+	border-top-color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav a:hover {
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav a:hover:before,
+.rm-menu .slicknav_nav a.remove-link-arrow:hover i,
+.rm-menu .slicknav_nav:hover > a:before,
+.rm-menu .slicknav_nav:hover > a i {
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav a:hover a {
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a a,
+.rm-menu .slicknav_nav .slicknav_open > a:hover a {
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a {
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a::before {
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav a:hover .slicknav_arrow {
+	border-color: #da1d1d;
+	color: #da1d1d;
+}
+
+.rm-menu .slicknav_nav .slicknav_open > a a + .slicknav_arrow {
+	border-color: #da1d1d;
+	background: #da1d1d;
+}
+
+/* Header scroll top button */
+.header-st:hover {
+	color: #da1d1d;
+}
+
+/* Flat section title */
+.flat-section-title::before,
+.flat-section-title::after {
+	background: #da1d1d;
+}
+
+/* App Screenshots */
+.screenshot-box a::after {
+	background: rgba(218, 29, 29, 0.8);
+}
+
+/* Testmonials */
+.st-message::before {
+	background: #da1d1d;
+}
+
+.st-person a {
+	color: #da1d1d;
+}
+
+.forms-toggler small {
+	color: #da1d1d;
+}
+
+/* Contact tabs */
+.contact-tabs-titles li.ui-state-active a, 
+.contact-tabs-titles li.ui-state-active a:hover {
+	color: #da1d1d;
+}
+
+.contact-tabs-titles li.ui-state-active a i, 
+.contact-tabs-titles li.ui-state-active a:hover i {
+	background: #da1d1d;
+	border-color: #da1d1d;
+}
+
+/* Blog */
+.entry-meta a:hover,
+.entry-meta a:hover i {
+	color: #da1d1d;
+}
+
+/* Pagination */
+.pagination li.active a,
+.pagination li.active a:hover {
+	background: #da1d1d;
+}
+
+/* Search form */
+.search-form .search-submit[type="submit"]:hover {
+	color: #da1d1d;
+}
+
+/* Twitter widget */
+.tweet_list .tweet_time a:hover {
+	color: #da1d1d;
+}
+
+.tweet_list .tweet_time:hover::before {
+	color: #da1d1d;
+}
+
+/* Posts Tabs widget */
+.posts-tabs-nav li.ui-tabs-active {
+	border-top-color: #da1d1d;
+}
+
+.posts-tabs-nav .ui-tabs-active a {
+	color: #da1d1d;
+}
+
+.posts-list-content a.title:hover {
+	color: #da1d1d;
+}
+
+.posts-list-content a.info:hover {
+	color: #da1d1d;
+}
+
+.posts-list-content a.info:hover i {
+	color: #da1d1d;
+}
+
+/* Tags */
+.tags a:hover {
+	color: #da1d1d;
+	border-color: #da1d1d;
+}
+
+/* Single post author */
+.author-website:hover {
+	color: #da1d1d;
+}
+
+.author-website:hover i {
+	color: #da1d1d;
+}
+
+/* Related posts carousel */
+.sp-related-posts-carousel .owl-controls .owl-buttons  [class*="owl-"]:hover {
+    background: #da1d1d;
+}
+
+/* Comments */
+.comment-meta .date a.reply:hover {
+	color: #da1d1d;
+}
+
+/* Copyright message */
+.copyrights-message a:hover {
+	color: #da1d1d;
+}
+
+/**
+  Shortcodes
+ ========================== */
+
+/* Icons */
+.icon.clean i {
+	color: #da1d1d;
+}
+
+.icon.colorful i {
+	box-shadow: inset 0 0 0 1px #da1d1d;
+}
+
+.icon.colorful i::after {
+	background-color: #da1d1d;
+}
+
+/* Info Boxes */
+[class*="info-box"]:hover .info-box-icon.hover-clean i {
+	color: #da1d1d;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i {
+	box-shadow: inset 0 0 0 1px #da1d1d;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i::after {
+	background-color: #da1d1d;
+}
+
+/* Buttons */
+.button.transparent-colorful,
+.button.hover-transparent-colorful:hover {
+	color: #da1d1d;
+	border-color: #da1d1d;
+}
+
+.button.colorful,
+.button.hover-colorful:hover {
+	background: #da1d1d;
+	border-color: #da1d1d;
+}
+
+/* Pricing table */
+.pricing-table-column-header .column-price span {
+	color: #da1d1d;
+}
+
+.pricing-table-column-footer a:hover {
+	background: #da1d1d;
+	border-color: #da1d1d;
+}
+
+.featured-pricing-table-column .pricing-table-column-header .column-price {
+	background: #da1d1d;
+}
+
+.featured-pricing-table-column .pricing-table-column-footer a {
+	background: #da1d1d;
+	border-color: #da1d1d;
+}
+
+
+
+
+
+
+

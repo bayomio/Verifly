@@ -1,0 +1,20 @@
+/**
+ * File Name: style.css
+ */
+
+@import url("bootstrap.css");
+@import url("styles.css");
+@import url("css-helpers.css");
+@import url("slicknav.css");
+@import url("animate.min.css");
+@import url("font-awesome.min.css");
+@import url("pe-icon-7-stroke.css");
+@import url("shortcodes.css");
+@import url("magnific-popup.css");
+@import url("owl.carousel.css");
+@import url("owl.theme.css");
+@import url("owl.transitions.css");
+@import url("responsive-specs.css");
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);

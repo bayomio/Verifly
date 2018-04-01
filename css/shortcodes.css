@@ -1,0 +1,2522 @@
+/**
+ *	=================================================================================================
+ *
+ *  [Shortcodes Stylesheet]
+ *
+ *	Project:		Bright - HTML Startup Landing Page
+ *	Version:		1.0
+ *	Last change:	06/26/2016
+ *	Primary use:	Mobile App, Landing Page, Creative, Coporate, Business
+ *	File Name: 		shortcodes.css
+ *	Author: 		Morad
+ *	Description: This file is containing all shortcodes used in the template.
+ *				 It's divided as listed below.
+ *	
+ *	=================================================================================================
+ *	
+ *	shortcodes.css file is divided as the following: 
+ *	
+ *	( 01 ) - Icons
+ *	( 02 ) - Info Boxes
+ *	( 03 ) - Buttons
+ *	( 04 ) - Pricing Table
+ *	( 05 ) - Social Icons
+ *	( 06 ) - Divider Spaces
+ *	( 07 ) - DropCaps
+ *	
+*/
+
+
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 01 ) - Icons
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains codes of Icons use settings, sizes and styles.
+ *
+ *	------
+ *
+ *  Icons divided to the following sections:
+ *
+ *	   |
+ *	   |-->  [ 1 ] - Icons Settings
+ *	   |-->  [ 2 ] - Icons Sizes
+ *	   |-->  [ 2 ] - Icons Sizes
+ *  
+ */
+
+
+/**
+ *  [ 1 ] - Icons Settings 
+ *	========================
+ */
+
+.icon {
+	display: inline-block;
+	border-radius: 4px;
+	position: relative;
+}
+
+.icon.rounded,
+.icon.rounded i,
+.icon.rounded img {
+	border-radius: 9999px;
+}
+
+.icon i,
+.icon img {
+	width: 100%;
+}
+
+.icon i {
+	position: relative;
+	z-index: 0;
+	height: 100%;
+	text-align: center;
+	border-radius: 4px;
+	transition: all 0.2s;
+
+	background: transparent; /* Icon background is assigned for the ::after */
+/*	color: #222;
+	box-shadow: inset 0 0 0 1px #eee;
+*/}
+
+.icon i::after {
+	/*background: #eee;*/ /* Icon background color */
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 4px;
+	content: '';
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+
+	-webkit-transition: all 0.2s;
+			transition: all 0.2s;
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.icon.rounded i::after {
+	border-radius: 9999px;
+}
+
+
+/**
+ *  [ 2 ] - Icons Styles 
+ *	======================
+ */
+
+/* Clean Icon */
+.icon.clean i {
+	color: #2277cc;
+	box-shadow: inset 0 0 0 1px #ccc;
+}
+
+.icon.clean i::after {
+	background-color: transparent;
+}
+
+/* Grey Icon */
+.icon.grey i {
+	color: #222;
+	box-shadow: inset 0 0 0 1px #ccc;
+}
+
+.icon.grey i::after {
+	background-color: #e5e5e5;
+}
+
+/* Dark Icon */
+.icon.dark i {
+	color: #fff;
+	box-shadow: inset 0 0 0 1px #222;
+}
+
+.icon.dark i::after {
+	background-color: #222;
+}
+
+/* Colorful Icon */
+.icon.colorful i {
+	color: #fff;
+	box-shadow: inset 0 0 0 1px #2277cc;
+}
+
+.icon.colorful i::after {
+	background-color: #2277cc;
+}
+
+/* Bordered Icon [ work with each color style ] */
+.icon.bordered i::after {
+	-webkit-transform: scale(0.87);
+		-ms-transform: scale(0.87);
+			transform: scale(0.87);
+}
+
+.icon.bordered.x4 i::after,
+.icon.bordered.x3 i::after {
+	-webkit-transform: scale(0.85);
+		-ms-transform: scale(0.85);
+			transform: scale(0.85);
+}
+
+.icon.bordered.x2 i::after {
+	-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+			transform: scale(0.8);
+}
+
+.icon.bordered.x1 i::after {
+	-webkit-transform: scale(0.75);
+		-ms-transform: scale(0.75);
+			transform: scale(0.75);
+}
+
+.icon.bordered.effect1 i::after {
+	-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+			transform: scale(1);
+}
+
+
+/**
+ *  [ 3 ] - Icons Sizes
+ *	=====================
+ */
+
+.x1 {
+	width: 32px;
+	height: 32px;
+}
+
+.x1 i {
+	line-height: 32px;
+	font-size: 13px;
+}
+
+.x2 {
+	width: 48px;
+	height: 48px;
+}
+
+.x2 i {
+	line-height: 48px;
+	font-size: 20px;
+}
+
+.x3 {
+	width: 64px;
+	height: 64px;
+}
+
+.x3 i {
+	line-height: 64px;
+	font-size: 27px;
+}
+
+.x4 {
+	width: 80px;
+	height: 80px;
+}
+
+.x4 i {
+	line-height: 80px;
+	font-size: 34px;
+}
+
+.x5 {
+	width: 96px;
+	height: 96px;
+}
+
+.x5 i {
+	line-height: 96px;
+	font-size: 41px;
+}
+
+.x6 {
+	width: 112px;
+	height: 112px;
+}
+
+.x6 i {
+	line-height: 112px;
+	font-size: 48px;
+}
+
+.x7 {
+	width: 128px;
+	height: 128px;
+}
+
+.x7 i {
+	line-height: 128px;
+	font-size: 55px;
+}
+
+.x8 {
+	width: 144px;
+	height: 144px;
+}
+
+.x8 i {
+	line-height: 144px;
+	font-size: 62px;
+}
+
+.x9 {
+	width: 160px;
+	height: 160px;
+}
+
+.x9 i {
+	line-height: 160px;
+	font-size: 69px;
+}
+
+.x10 {
+	width: 176px;
+	height: 176px;
+}
+
+.x10 i {
+	line-height: 176px;
+	font-size: 76px;
+}
+
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 02 ) - Info Boxes
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains codes of Info Boxes settings and styles.
+ *
+ *	------
+ *
+ *  Info Boxes to the following sections:
+ *
+ *	   |
+ *	   |-->  [ 1 ] - Info Boxes Settings
+ *	   |-->  [ 2 ] - Info Boxes Icons Styles
+ *	   |-->  [ 3 ] - Info Boxes Types
+ *  
+ */
+
+
+/**
+ *  [ 1 ] - Info Boxes Settings 
+ *	=============================
+ */
+
+/* Info Box */
+[class*="info-box"] {
+	margin-bottom: 0;
+}
+
+.col-md-12 .info-box1,
+.col-sm-12 .info-box1,
+.col-lg-12 .info-box1,
+.col-md-12 .info-box2,
+.col-sm-12 .info-box2,
+.col-lg-12 .info-box2 {
+	margin-bottom: 40px;
+}
+
+/*[class*="col-"]:not(col-md-12) > [class*="info-box"],
+[class*="col-"]:not(col-sm-12) > [class*="info-box"] {
+	display: none;
+}
+*/
+[class*="info-box"] h1,
+[class*="info-box"] h2 {
+	margin-bottom: 13px;
+}
+
+[class*="info-box"] h3,
+[class*="info-box"] h4 {
+	margin-bottom: 10px;
+}
+
+[class*="info-box"] h5,
+[class*="info-box"] h6 {
+	margin-bottom: 10px;
+}
+
+
+/* Info Box Content */
+[class*="info-box-content"] {
+
+}
+
+[class*="info-box-content"] p:last-child {
+	padding-bottom: 0;
+}
+
+/* Info Box Icon */
+[class*="info-box-icon"] {
+	position: relative;
+}
+
+
+/**
+ *  [ 2 ] - Info Boxes Icons Styles
+ *	=================================
+ */
+
+/* Icon Animation when hover info box */
+
+/* Color Control */
+
+/* Hover Clean */
+[class*="info-box"]:hover .info-box-icon.hover-clean i {
+	box-shadow: inset 0 0 0 1px #ccc;
+	color: #2277cc;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-clean i::after {
+	background-color: transparent;
+}
+
+/* Hover Grey */
+[class*="info-box"]:hover .info-box-icon.hover-grey i {
+	box-shadow: inset 0 0 0 1px #ccc;
+	color: #222;
+}
+
+[class*="info-box"]:hover .info-box-icon.effect2.hover-grey i {
+	box-shadow: inset 0 0 0 1px #e5e5e5;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-grey i::after {
+	background-color: #e5e5e5;
+}
+
+/* Hover dark */
+[class*="info-box"]:hover .info-box-icon.hover-dark i {
+	box-shadow: inset 0 0 0 1px #222;
+	color: #fff;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-dark i::after {
+	background-color: #222;
+}
+
+/* Hover Colorful */
+[class*="info-box"]:hover .info-box-icon.hover-colorful i {
+	box-shadow: inset 0 0 0 1px #2277cc;
+	color: #fff;
+}
+
+[class*="info-box"]:hover .info-box-icon.hover-colorful i::after {
+	background-color: #2277cc;
+}
+
+
+/* Scale Control */
+
+/* Info Box Hover Icon "Effect 1" */
+[class*="info-box"]:hover .info-box-icon.effect1 i::after {
+	-webkit-transform: scale(0.87);
+		-ms-transform: scale(0.87);
+			transform: scale(0.87);
+}
+
+[class*="info-box"]:hover .info-box-icon.effect1.x4 i::after,
+[class*="info-box"]:hover .info-box-icon.effect1.x3 i::after {
+	-webkit-transform: scale(0.85);
+		-ms-transform: scale(0.85);
+			transform: scale(0.85);
+}
+
+[class*="info-box"]:hover .info-box-icon.effect1.x2 i::after {
+	-webkit-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+			transform: scale(0.8);
+}
+
+[class*="info-box"]:hover .info-box-icon.effect1.x1 i::after {
+	-webkit-transform: scale(0.75);
+		-ms-transform: scale(0.75);
+			transform: scale(0.75);
+}
+
+/* Info Box Hover Icon "Effect 2" */
+[class*="info-box"]:hover .info-box-icon.effect2 i::after {
+	-webkit-transform: scale(1) !important;
+		-ms-transform: scale(1) !important;
+			transform: scale(1) !important;
+}
+
+
+/**
+ *  [ 3 ] - Info Boxes Types
+ *	==========================
+ */
+
+/* Info Box 1
+ ----------------- */
+
+.info-box1 {
+	width: 100%;
+	position: relative;
+}
+
+/* Info Box 1 Content */
+.info-box1 .info-box-icon.x1 + .info-box-content {
+	padding-left: 62px;
+	min-height: 32px;
+}
+
+.info-box1 .info-box-icon.x2 + .info-box-content {
+	padding-left: 78px;
+	min-height: 48px;
+}
+
+.info-box1 .info-box-icon.x3 + .info-box-content {
+	padding-left: 94px;
+	min-height: 64px;
+}
+
+.info-box1 .info-box-icon.x4 + .info-box-content {
+	padding-left: 110px;
+	min-height: 80px;
+}
+
+.info-box1 .info-box-icon.x5 + .info-box-content {
+	padding-left: 126px;
+	min-height: 96px;
+}
+
+.info-box1 .info-box-icon.x6 + .info-box-content {
+	padding-left: 142px;
+	min-height: 112px;
+}
+
+.info-box1 .info-box-icon.x7 + .info-box-content {
+	padding-left: 158px;
+	min-height: 128px;
+}
+
+.info-box1 .info-box-icon.x8 + .info-box-content {
+	padding-left: 174px;
+	min-height: 144px;
+}
+
+.info-box1 .info-box-icon.x9 + .info-box-content {
+	padding-left: 190px;
+	min-height: 160px;
+}
+
+.info-box1 .info-box-icon.x10 + .info-box-content {
+	padding-left: 206px;
+	min-height: 176px;
+}
+
+/* Info Box 1 Right Text */
+.info-box1.text-right .info-box-icon.x1 + .info-box-content {
+	padding-left: 0;
+	padding-right: 62px;
+}
+
+.info-box1.text-right .info-box-icon.x2 + .info-box-content {
+	padding-left: 0;
+	padding-right: 78px;
+}
+
+.info-box1.text-right .info-box-icon.x3 + .info-box-content {
+	padding-left: 0;
+	padding-right: 94px;
+}
+
+.info-box1.text-right .info-box-icon.x4 + .info-box-content {
+	padding-left: 0;
+	padding-right: 110px;
+}
+
+.info-box1.text-right .info-box-icon.x5 + .info-box-content {
+	padding-left: 0;
+	padding-right: 126px;
+}
+
+.info-box1.text-right .info-box-icon.x6 + .info-box-content {
+	padding-left: 0;
+	padding-right: 142px;
+}
+
+.info-box1.text-right .info-box-icon.x7 + .info-box-content {
+	padding-left: 0;
+	padding-right: 158px;
+}
+
+.info-box1.text-right .info-box-icon.x8 + .info-box-content {
+	padding-left: 0;
+	padding-right: 174px;
+}
+
+.info-box1.text-right .info-box-icon.x9 + .info-box-content {
+	padding-left: 0;
+	padding-right: 190px;
+}
+
+.info-box1.text-right .info-box-icon.x10 + .info-box-content {
+	padding-left: 0;
+	padding-right: 206px;
+}
+
+
+
+/* Info Box 1 Icon */
+.info-box1 .info-box-icon {
+	position: absolute;
+}
+
+.info-box1.text-right .info-box-icon {
+	right: 0;
+}
+
+
+/* Info Box 2
+ ----------------- */
+
+.info-box2 .info-box-icon {
+	margin-bottom: 25px;
+}
+
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 03 ) - Buttons
+ *	-------------------------------------------------------------------------------
+ *  
+ *  This part contains codes of Buttons settings and styles.
+ *
+ *	------
+ *
+ *  It has the following code:
+ *
+ */
+
+
+.button {
+	text-align: center;
+	border: 3px solid;
+	margin: 15px 5px 0 0;
+	border-radius: 4px;
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	transition: color 0.2s, background 0.2s ,border-color 0.2s, border-width 0.2s, padding 0.2s;
+}
+
+.button.rounded {
+	border-radius: 9999px;
+}
+
+/* Sizes of Header Featured Button */
+.button.x-small {
+	font-size: 14px;
+	padding: 5px 23px;
+}
+
+.button.small {
+	font-size: 18px;
+	padding: 7px 29px;
+}
+
+.button.medium {
+	font-size: 22px;
+	padding: 9px 35px;
+}
+
+.button.large {
+	font-size: 26px;
+	padding: 11px 41px;
+}
+
+.button.x-large {
+	font-size: 30px;
+	padding: 13px 47px;
+}
+
+/* Button with Icons */
+.button i {
+	position: relative;
+	transition: all 0.2s;
+}
+
+.button i.fa {
+	top: 0 !important;
+}
+
+.button.x-small i {
+	width: 14px;
+}
+
+.button.small i {
+	width: 18px;
+}
+
+.button.medium i {
+	width: 22px;
+}
+
+.button.large i {
+	width: 26px;
+}
+
+.button.x-large i {
+	width: 30px;
+}
+
+/* With Icon Right */
+.button.with-icon-right.x-small i {
+	margin-left: 6px;
+	top: 2px;
+	right: 0;
+}
+
+.button.with-icon-right.small i {
+	margin-left: 7px;
+	top: 2px;
+	right: -1px;
+}
+
+.button.with-icon-right.medium i {
+	margin-left: 8px;
+	top: 2px;
+	right: -2px;
+}
+
+.button.with-icon-right.large i,
+.button.with-icon-right.x-large i {
+	margin-left: 8px;
+	top: 3px;
+	right: -3px;
+}
+
+
+/* With Icon Left */
+.button.with-icon-left.x-small i {
+	margin-right: 6px;
+	top: 2px;
+	left: 0;
+}
+
+.button.with-icon-left.small i {
+	margin-right: 7px;
+	top: 2px;
+	left: -1px;
+}
+
+.button.with-icon-left.medium i {
+	margin-right: 8px;
+	top: 2px;
+	left: -2px;
+}
+
+.button.with-icon-left.large i,
+.button.with-icon-left.x-large i {
+	margin-right: 8px;
+	top: 3px;
+	left: -3px;
+}
+
+/* With Hover Icon Right & Left */
+.button.with-hover-icon-right i,
+.button.with-hover-icon-left i {
+	width: 0;
+	opacity: 0;
+}
+
+.button.with-hover-icon-right:hover i,
+.button.with-hover-icon-left:hover i {
+	opacity: 1;
+	transition: all 0.2s;	
+}
+
+.button.with-hover-icon-right.x-small i {
+	top: 2px;
+	right: 0;
+}
+
+.button.with-hover-icon-right.x-small:hover i {
+	width: 14px;
+	margin-left: 6px;
+}
+
+.button.with-hover-icon-right.small i {
+	top: 2px;
+	right: -1px;
+}
+
+.button.with-hover-icon-right.small:hover i {
+	width: 18px;
+	margin-left: 7px;
+}
+
+.button.with-hover-icon-right.medium i {
+	top: 2px;
+	right: -2px;
+}
+
+.button.with-hover-icon-right.medium:hover i {
+	width: 22px;
+	margin-left: 8px;
+}
+
+.button.with-hover-icon-right.large i,
+.button.with-hover-icon-right.x-large i {
+	top: 3px;
+	right: -3px;
+}
+
+.button.with-hover-icon-right.large:hover i {
+	width: 26px;
+	margin-left: 8px;
+}
+
+.button.with-hover-icon-right.x-large:hover i {
+	width: 30px;
+	margin-left: 8px;
+}
+
+.button.with-hover-icon-left.x-small i {
+	top: 2px;
+	left: 0;
+}
+
+.button.with-hover-icon-left.x-small:hover i {
+	width: 14px;
+	margin-right: 6px;
+}
+
+.button.with-hover-icon-left.small i {
+	top: 2px;
+	left: -1px;
+}
+
+.button.with-hover-icon-left.small:hover i {
+	width: 18px;
+	margin-right: 7px;
+}
+
+.button.with-hover-icon-left.medium i {
+	top: 2px;
+	left: -2px;
+}
+
+.button.with-hover-icon-left.medium:hover i {
+	width: 22px;
+	margin-right: 8px;
+}
+
+.button.with-hover-icon-left.large i,
+.button.with-hover-icon-left.x-large i {
+	top: 3px;
+	left: -3px;
+}
+
+.button.with-hover-icon-left.large:hover i {
+	width: 26px;
+	margin-right: 8px;
+}
+
+.button.with-hover-icon-left.x-large:hover i {
+	width: 30px;
+	margin-right: 8px;
+}
+
+
+/* Transparent Colorful Button */
+.button.transparent-colorful,
+.button.hover-transparent-colorful:hover {
+	color: #2277cc;
+	background: transparent;
+	border-color: #2277cc;
+}
+
+/* Colorful Button */
+.button.colorful,
+.button.hover-colorful:hover {
+	color: #fff;
+	background: #2277cc;
+	border-color: #2277cc;
+}
+
+/* Transparent White Button */
+.button.transparent-white,
+.button.hover-transparent-white:hover {
+	color: #fff;
+	background: transparent;
+	border-color: #fff;
+}
+
+/* White Button */
+.button.white,
+.button.hover-white:hover {
+	color: #111;
+	background: #fff;
+	border-color: #fff;
+}
+
+/* Transparent Grey Button */
+.button.transparent-grey,
+.button.hover-transparent-grey:hover {
+	color: #111;
+	background: transparent;
+	border-color: #ccc;
+}
+
+/* Grey Button */
+.button.grey,
+.button.hover-grey:hover {
+	color: #111;
+	background: #e5e5e5;
+	border-color: #e5e5e5;
+}
+
+/* Transparent Dark Button */
+.button.transparent-dark,
+.button.hover-transparent-dark:hover {
+	color: #111;
+	background: transparent;
+	border-color: #111;
+}
+
+/* Dark Button */
+.button.dark,
+.button.hover-dark:hover {
+	color: #fff;
+	background: #111;
+	border-color: #111;
+}
+
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 04 ) - Pricing Table
+ *	-------------------------------------------------------------------------------
+ *  
+ *  Pricing Table divided to the following sections:
+ *
+ *	------
+ *
+ *	   |
+ *	   |-->  [ 1 ] - Pricing Table Settings
+ *	   |-->  [ 2 ] - Pricing Table Column Features
+ *	   |-->  [ 3 ] - General Pricing Table Column
+ *	   |-->  [ 4 ] - Pricing Table Single Column Features
+ *	   |-->  [ 5 ] - Pricing Table Column Footer
+ *	   |-->  [ 6 ] - Free Pricing Table Column
+ *	   |-->  [ 7 ] - Featured Pricing Table Column
+ *  
+ */
+
+
+/**
+ *  [ 1 ] - Pricing Table Settings 
+ *	================================
+ */
+
+.pricing-table {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-size: 12px;	
+}
+
+.pricing-table .row {
+/*	margin: 0 -2.5px;
+*/}
+
+.pricing-table [class*="col-"] {
+/*	padding: 0 2.5px;
+	margin-right: -1px;	
+*/}
+
+.pricing-table [class*="col-"] + [class*="col-"]:last-child {
+/*	float: left;	
+*/}
+
+.pricing-table i.fa-check, .pricing-table i.fa-remove{
+	font-size: 21px;
+}
+
+/* Pricing Table Icons */
+
+.pricing-table i.fa-check {
+	color: #4a993e;
+	cursor: default;	
+}
+
+.pricing-table i.fa-remove {
+	color: #f93848;
+	cursor: default;	
+}
+
+.pricing-table-column {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 4px;
+	-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+	top: 0;
+	border: 1px solid #ddd;
+}
+
+
+/**
+ *  [ 2 ] - Pricing Table Column Features 
+ *	=======================================
+ */
+
+.pricing-table-column-features {
+	border: none;
+	overflow: hidden;
+	display: block;
+	margin-right: -4px;
+}
+
+.pricing-table-column-features ul.single-column-features {
+	border: 1px solid #eaeaea;
+	border-right: none;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Pricing Table Column Features Header */
+
+.pricing-table-column-features .pricing-table-column-header {
+	height: 165px; 
+	background: #fff;
+}
+
+.pricing-table-column-features .pricing-table-column-header h2 {
+	font-size: 30px; 
+	font-weight: 300; 
+	padding: 0 30px; 
+	border: none; 
+	padding: 70px 0 0; 
+	line-height: 36px; 
+	background: #fff; 
+	color: #222; 
+}
+
+.pricing-table-column-features .pricing-table-column-header h2 .colored {
+	display: block;
+}
+
+.two.columns .pricing-table-column-features .pricing-table-column-header h2 {
+	font-size: 24px;
+	line-height: 28px;
+	padding-top: 38px;
+	height: 135px;	
+}
+
+.pricing-table-column:hover {
+	 /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 	*/
+	 /*top: -10px;*/
+}
+
+
+/**
+ *  [ 3 ] - General Pricing Table Column
+ *	======================================
+ */
+
+/* Pricing Table Column Header */
+
+.pricing-table-column-header {
+	display: block;
+	overflow: hidden;
+	background: #fff;
+	font-family: "Roboto", sans-serif;
+}
+
+/* Pricing Table Column Title */
+
+.pricing-table-column-header .column-title {
+	font-size: 24px;
+	background: #fff;
+	color: #222;
+	padding: 21px 30px;
+	margin: 0;
+}
+
+/* Pricing Table Column Price */
+
+.pricing-table-column-header .column-price {
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+	padding: 32px 30px;
+	margin: 0;
+	color: #666;
+	background: #eee;
+}
+
+.pricing-table-column-header .column-price small {
+	font-size: 12px;
+	color: #666;
+}
+
+.pricing-table-column-header .column-price span {
+	color: #2277cc;
+	font-size: 60px;
+	line-height: 1.2;
+	display: block;
+}
+
+
+/**
+ *  [ 4 ] - Pricing Table Single Column Features
+ *	==============================================
+ */
+
+/* Pricing Table Single Column Features */
+
+ul.single-column-features {
+	list-style: none outside;
+	display: block;
+	padding: 18px 30px 0;
+	font-size: 18px;
+	color: #777;
+	width: 100%;
+	text-align: left;
+}
+
+ul.single-column-features li {
+	padding: 16px 0;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+
+ul.single-column-features li span {
+	float: right;
+}
+
+ul.single-column-features li span img {
+	position: relative;
+	top: -1px;
+}
+
+ul.single-column-features li:last-child {
+
+}
+
+ul.single-column-features li:nth-child(2n) {
+	/*background: rgba(0, 0, 0, .03);	*/
+}
+
+
+/**
+ *  [ 5 ] - Pricing Table Column Footer
+ *	=====================================
+ */
+
+.pricing-table-column-footer {
+	width: 100%;
+	padding: 45px 30px;
+	text-align: center;
+}
+
+.pricing-table-column-footer .button {
+	margin-top: 0;
+}
+
+.pricing-table-column-footer a:hover {
+	color: #fff;
+	background: #2277cc;
+	border-color: #2277cc;
+}
+
+
+
+/**
+ *  [ 6 ] - Free Pricing Table Column
+ *	===================================
+ */
+
+/* Free Pricing Table Column Header */
+
+.free-pricing-table-column .pricing-table-column-header {
+
+}
+
+ /* Free Pricing Table Column Title */
+
+.free-pricing-table-column .pricing-table-column-header .column-title {
+
+}
+
+/* Free Pricing Table Column Price */
+
+.free-pricing-table-column .pricing-table-column-header .column-price {
+	color: #fff;
+	background: #5ca74f;
+}
+
+.free-pricing-table-column .pricing-table-column-header .column-price span {
+	color: #fff;
+}
+
+.free-pricing-table-column .pricing-table-column-footer a {
+	color: #fff;
+	background: #5ca74f;
+	border-color: #5ca74f;
+}
+
+
+/**
+ *  [ 7 ] - Featured Pricing Table Column 
+ *	=======================================
+ */
+
+/* Featured Pricing Table Column */
+
+.featured-pricing-table-column {
+	z-index: 1; /* important */	
+}
+
+/* Featured Pricing Table Column Header */
+
+.featured-pricing-table-column .pricing-table-column-header {
+
+}
+
+/* Featured Pricing Table Column Title */
+
+.featured-pricing-table-column .pricing-table-column-header .column-title {
+
+}
+
+/* Featured Pricing Table Column Price */
+
+.featured-pricing-table-column .pricing-table-column-header .column-price {
+	color: #fff;
+	background: #2277cc;
+}
+
+.featured-pricing-table-column .pricing-table-column-header .column-price small {
+	color: #fff;
+}
+
+.featured-pricing-table-column .pricing-table-column-header .column-price span {
+	color: #fff;
+}
+
+.featured-pricing-table-column .pricing-table-column-footer a {
+	color: #fff;
+	background: #2277cc;
+	border-color: #2277cc;
+}
+
+
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 05 ) - Social Icons
+ *	-------------------------------------------------------------------------------
+ *  
+ *  Social Icons are divided to the following sections:
+ *
+ *	------
+ *
+ *	   |
+ *	   |-->  [ 1 ] - Social Icons Basic Settings
+ *	   |-->  [ 2 ] - Social Icons Sizes
+ *	   |-->  [ 3 ] - Social Icons Styles
+ *  
+ */
+
+
+/**
+ *  [ 1 ] - Social Icons Basic Settings 
+ *	=====================================
+ */
+
+.social-icons {
+	list-style: none outside;
+	display: block;
+	margin-bottom: -5px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.social-icons li {
+	display: inline-block;
+	margin: 0 5px 5px 0;
+	font-size: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.social-icons li:last-child {
+	margin-right: 0;
+}
+
+.social-icons li a {
+	/*color: #444;*/
+	border: 1px solid;
+	font-size: 19px;
+	display: block;
+	position: relative;
+	border-radius: 3px;
+	transition: color 0.2s, background 0.2s ,border-color 0.2s, border-width 0.2s, padding 0.2s;
+}
+
+.social-icons li a:hover {
+
+}
+
+/**
+ * :before -> is the default icon
+ * ::after  -> is the appearing icon in the hover case
+ */
+.social-icons li a i:before, 
+.social-icons li a i::after {
+	color: #444;
+	height: 43px;
+	width: 43px;
+	line-height: 43px;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 0;
+	visibility: visible;	
+	-webkit-transition: all .2s;
+			transition: all .2s;
+}
+
+.social-icons li a i::after {
+	position: absolute;
+	/*color: #fff;*/
+	opacity: 0;
+	visibility: hidden;
+	top: 12px;
+}
+
+.social-icons li a:hover i:before {
+	top: -12px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.social-icons li a:hover i::after {
+	opacity: 1 !important;
+	visibility: visible;
+	top: 0;
+}
+
+/* Rounded Social Icons */
+.social-icons.rounded li a {
+	border-radius: 1000px;
+}
+
+/* Disable Social Icons Animation */
+.social-icons.no-animation li a i::after,
+.social-icons.no-animation li a:hover i:before {
+	top: 0 !important;
+}
+
+/* ### Social Icons Values ------ */
+
+/* rss */
+.social-icons li a i.fa-rss::after {
+	content: "\f09e";
+}
+
+/* stack-overflow */
+.social-icons li a i.fa-stack-overflow::after {
+	content: "\f16c";
+}
+
+/* weibo */
+.social-icons li a i.fa-weibo::after {
+	content: "\f18a";
+}
+
+/* youtube */
+.social-icons li a i.fa-youtube::after {
+	content: "\f167";
+}
+
+/* bitcoin */
+.social-icons li a i.fa-bitcoin::after {
+	content: "\f15a";
+}
+
+/* dropbox */
+.social-icons li a i.fa-dropbox::after {
+	content: "\f16b";
+}
+
+/* foursquare */
+.social-icons li a i.fa-foursquare::after {
+	content: "\f180";
+}
+
+/* gittip */
+.social-icons li a i.fa-gittip::after {
+	content: "\f184";
+}
+
+/* instagram */
+.social-icons li a i.fa-instagram::after {
+	content: "\f16d";
+}
+
+/* maxcdn */
+.social-icons li a i.fa-maxcdn::after {
+	content: "\f136";
+}
+
+/* renren */
+.social-icons li a i.fa-renren::after {
+	content: "\f18b";
+}
+
+/* trello */
+.social-icons li a i.fa-trello::after {
+	content: "\f181";
+}
+
+/* pagelines */
+.social-icons li a i.fa-pagelines::after {
+	content: "\f18c";
+}
+
+/* skype */
+.social-icons li a i.fa-skype::after {
+	content: "\f17e";
+}
+
+/* vimeo */
+.social-icons li a i.fa-vimeo::after {
+	content: "\f27d";
+}
+
+/* github */
+.social-icons li a i.fa-github::after {
+	content: "\f09b";
+}
+
+/* google-plus */
+.social-icons li a i.fa-google-plus::after {
+	content: "\f0d5";
+}
+
+/* linkedin */
+.social-icons li a i.fa-linkedin::after {
+	content: "\f0e1";
+}
+
+/* pinterest */
+.social-icons li a i.fa-pinterest-p::after {
+	content: "\f231";
+}
+
+/* stack-exchange */
+.social-icons li a i.fa-stack-exchange::after {
+	content: "\f18d";
+}
+
+/* tumblr */
+.social-icons li a i.fa-tumblr::after {
+	content: "\f173";
+}
+
+/* xing */
+.social-icons li a i.fa-xing::after {
+	content: "\f168";
+}
+
+/* flickr */
+.social-icons li a i.fa-flickr::after {
+	content: "\f16e";
+}
+
+/* bitbucket */
+.social-icons li a i.fa-bitbucket::after {
+	content: "\f171";
+}
+
+/* facebook */
+.social-icons li a i.fa-facebook::after {
+	content: "\f09a";
+}
+
+/* twitter */
+.social-icons li a i.fa-twitter::after {
+	content: "\f099";
+}
+
+/* dribbble */
+.social-icons li a i.fa-dribbble::after {
+	content: "\f17d";
+}
+
+/* yelp */
+.social-icons li a i.fa-yelp::after {
+	content: "\f1e9";
+}
+
+
+/**
+ *  [ 2 ] - Social Icons Sizes
+ *	============================
+ */
+
+/**
+ * For clean and colorful icon styles, they have the same size
+ * and different to the default values of sizes
+ */
+
+/* X-Small size */
+.social-icons.x-small li a {
+	font-size: 16px;
+}
+
+.social-icons.x-small.rounded li a {
+	font-size: 16px;
+}
+
+.social-icons.x-small li a i:before, 
+.social-icons.x-small li a i::after {
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+}
+
+.social-icons.x-small li a i::after {
+	top: 20px;
+}
+
+.social-icons.x-small li a:hover i:before {
+	top: -20px;
+}
+
+.social-icons.x-small li a:hover i::after {
+	top: 0;
+}
+
+/* Small size */
+.social-icons.small li a {
+	font-size: 20px;
+}
+
+.social-icons.small.rounded li a {
+	font-size: 18px;
+}
+
+.social-icons.small li a i:before, 
+.social-icons.small li a i::after {
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+}
+
+.social-icons.small li a i::after {
+	top: 20px;
+}
+
+.social-icons.small li a:hover i:before {
+	top: -20px;
+}
+
+.social-icons.small li a:hover i::after {
+	top: 0;
+}
+
+
+/* Medium size */
+.social-icons.medium li a {
+	font-size: 23px;
+}
+
+.social-icons.medium.rounded li a {
+	font-size: 21px;
+}
+
+.social-icons.medium li a i:before, 
+.social-icons.medium li a i::after {
+	height: 50px;
+	width: 50px;
+	line-height: 50px;
+}
+
+.social-icons.medium li a i::after {
+	top: 24px;
+}
+
+.social-icons.medium li a:hover i:before {
+	top: -24px;
+}
+
+.social-icons.medium li a:hover i::after {
+	top: 0;
+}
+
+/* Large size */
+.social-icons.large li a {
+	font-size: 27px;
+}
+
+.social-icons.large.rounded li a {
+	font-size: 25px;
+}
+
+.social-icons.large li a i:before, 
+.social-icons.large li a i::after {
+	height: 60px;
+	width: 60px;
+	line-height: 60px;
+}
+
+.social-icons.large li a i::after {
+	top: 28px;
+}
+
+.social-icons.large li a:hover i:before {
+	top: -28px;
+}
+
+.social-icons.large li a:hover i::after {
+	top: 0;
+}
+
+/* X-Large size */
+.social-icons.x-large li a {
+	font-size: 31px;
+}
+
+.social-icons.x-large.rounded li a {
+	font-size: 29px;
+}
+
+.social-icons.x-large li a i:before, 
+.social-icons.x-large li a i::after {
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+}
+
+.social-icons.x-large li a i::after {
+	top: 32px;
+}
+
+.social-icons.x-large li a:hover i:before {
+	top: -32px;
+}
+
+.social-icons.x-large li a:hover i::after {
+	top: 0;
+}
+
+/* Changing Social Icon Width for Clean and Colorful Icon styles */
+.social-icons.clean.x-large li,
+.social-icons.clean.large li,
+.social-icons.colorful-icon.x-large li,
+.social-icons.colorful-icon.large li {
+	margin-right: -10px;
+}
+
+.social-icons.clean.medium li,
+.social-icons.colorful-icon.medium li,
+.social-icons.clean.small li,
+.social-icons.colorful-icon.small li {
+	margin-right: -7px;
+}
+
+.social-icons.clean.x-small li,
+.social-icons.colorful-icon.x-small li {
+	margin-right: -5px;
+}
+
+
+
+
+/**
+ *  [ 3 ] - Social Icons Styles
+ *	=============================
+ */
+
+/* Clean Social Icons */
+.social-icons.clean {
+	margin-bottom: 0;
+}
+
+.social-icons.clean li {
+	margin: 0;
+}
+
+.social-icons.clean li a {
+	color: #444;
+	border-color: transparent;
+	background: transparent;
+}
+
+.social-icons.clean li a i:before {
+	color: #444;
+}
+
+/* Hover Clean Social Icons */
+.social-icons.hover-clean li a:hover {
+	border-color:transparent;
+	background: transparent !important;
+}
+
+.social-icons.hover-clean li a:hover i::after {
+	color: #444;
+}
+
+/* Bordered Social Icons */
+.social-icons.bordered li a {
+	color: #444;
+	border-color: #cfcfcf;
+	background: #fff;
+}
+
+.social-icons.bordered li a i:before {
+	color: #444;
+}
+
+/* Hover Bordered Social Icons */
+.social-icons.hover-bordered li a:hover {
+	border-color: #cfcfcf;
+	background: #fff !important;
+}
+
+.social-icons.hover-bordered li a:hover i::after {
+	color: #444;
+}
+
+
+/* Grey Social Icons */
+.social-icons.grey li a {
+	border-color: transparent;
+	background: #eee;
+}
+
+.social-icons.grey li a i:before {
+	color: #444;
+}
+
+/* Hover Grey Social Icons */
+.social-icons.hover-grey li a:hover {
+	border-color: transparent;
+	background: #eee !important;
+}
+
+.social-icons.hover-grey li a:hover i::after {
+	color: #444;
+}
+
+/* Dark Social Icons */
+.social-icons.dark li a {
+	border-color: transparent;
+	background: #444;
+}
+
+.social-icons.dark li a i:before {
+	color: #fff;
+}
+
+/* Hover Dark Social Icons */
+.social-icons.hover-dark li a:hover {
+	border-color: transparent;
+	background: #444 !important;
+}
+
+.social-icons.hover-dark li a:hover i::after {
+	color: #fff;
+}
+
+
+/* ### Colorful BG Social Icons ----- */
+
+/* Colorful BG Social Icons */
+.social-icons.colorful-BG li a {
+	border-color: transparent;
+}
+
+.social-icons.colorful-BG li a i:before {
+	color: #fff;
+}
+
+/* rss */
+.social-icons.colorful-BG li a.social-icon-rss {
+	background: #ea6d19;
+}
+
+/* stack-overflow */
+.social-icons.colorful-BG li a.social-icon-stack-overflow {
+	background: #ea6d19;
+}
+
+/* weibo */
+.social-icons.colorful-BG li a.social-icon-weibo {
+	background: #cb3332;
+}
+
+/* youtube */
+.social-icons.colorful-BG li a.social-icon-youtube {
+	background: #ad2c27;
+}
+
+/* bitcoin */
+.social-icons.colorful-BG li a.social-icon-bitcoin {
+	background: #f7931b;
+}
+
+/* dropbox */
+.social-icons.colorful-BG li a.social-icon-dropbox {
+	background: #0a6594;
+}
+
+/* foursquare */
+.social-icons.colorful-BG li a.social-icon-foursquare {
+	background: #3170a5;
+}
+
+/* gittip */
+.social-icons.colorful-BG li a.social-icon-gittip {
+	background: #593e34;
+}
+
+/* instagram */
+.social-icons.colorful-BG li a.social-icon-instagram {
+	background: #593e34;
+}
+
+/* maxcdn */
+.social-icons.colorful-BG li a.social-icon-maxcdn {
+	background: #ea6d19;
+}
+
+/* renren */
+.social-icons.colorful-BG li a.social-icon-renren {
+	background: #3170a5;
+}
+
+/* trello */
+.social-icons.colorful-BG li a.social-icon-trello {
+	background: #176280;
+}
+
+/* pagelines */
+.social-icons.colorful-BG li a.social-icon-pagelines {
+	background: #235789;
+}
+
+/* skype */
+.social-icons.colorful-BG li a.social-icon-skype {
+	background: #1ca3db;
+}
+
+/* vimeo */
+.social-icons.colorful-BG li a.social-icon-vimeo {
+	background: #1ca3db;
+}
+
+/* github */
+.social-icons.colorful-BG li a.social-icon-github {
+	background: #235789;
+}
+
+/* google-plus */
+.social-icons.colorful-BG li a.social-icon-google-plus {
+	background: #9e3023;
+}
+
+/* linkedin */
+.social-icons.colorful-BG li a.social-icon-linkedin {
+	background: #0a6594;
+}
+
+/* pinterest */
+.social-icons.colorful-BG li a.social-icon-pinterest-p {
+	background: #a9272f;
+}
+
+/* stack-exchange */
+.social-icons.colorful-BG li a.social-icon-stack-exchange {
+	background: #235789;
+}
+
+/* tumblr */
+.social-icons.colorful-BG li a.social-icon-tumblr {
+	background: #3e5a70;
+}
+
+/* xing */
+.social-icons.colorful-BG li a.social-icon-xing {
+	background: #015a60;
+}
+
+/* flickr */
+.social-icons.colorful-BG li a.social-icon-flickr {
+	background: #db458f;
+}
+
+/* bitbucket */
+.social-icons.colorful-BG li a.social-icon-bitbucket {
+	background: #0e4a83;
+}
+
+/* facebook */
+.social-icons.colorful-BG li a.social-icon-facebook {
+	background: #395793;
+}
+
+/* twitter */
+.social-icons.colorful-BG li a.social-icon-twitter {
+	background: #1ca3db;
+}
+
+/* dribbble */
+.social-icons.colorful-BG li a.social-icon-dribbble {
+	background: #ce4b81;
+}
+
+/* yelp */
+.social-icons.colorful-BG li a.social-icon-yelp {
+	background: #d64132;
+}
+
+
+/* ### Hover Colorful BG Social Icons ----- */
+
+/* Hover Colorful BG Social Icons */
+.social-icons.hover-colorful-BG li a:hover {
+	border-color: transparent;
+}
+
+.social-icons.hover-colorful-BG li a:hover i::after {
+	color: #fff;
+}
+
+/* rss */
+.social-icons.hover-colorful-BG li a.social-icon-rss:hover {
+	background: #ea6d19;
+}
+
+/* stack-overflow */
+.social-icons.hover-colorful-BG li a.social-icon-stack-overflow:hover {
+	background: #ea6d19;
+}
+
+/* weibo */
+.social-icons.hover-colorful-BG li a.social-icon-weibo:hover {
+	background: #cb3332;
+}
+
+/* youtube */
+.social-icons.hover-colorful-BG li a.social-icon-youtube:hover {
+	background: #ad2c27;
+}
+
+/* bitcoin */
+.social-icons.hover-colorful-BG li a.social-icon-bitcoin:hover {
+	background: #f7931b;
+}
+
+/* dropbox */
+.social-icons.hover-colorful-BG li a.social-icon-dropbox:hover {
+	background: #0a6594;
+}
+
+/* foursquare */
+.social-icons.hover-colorful-BG li a.social-icon-foursquare:hover {
+	background: #3170a5;
+}
+
+/* gittip */
+.social-icons.hover-colorful-BG li a.social-icon-gittip:hover {
+	background: #593e34;
+}
+
+/* instagram */
+.social-icons.hover-colorful-BG li a.social-icon-instagram:hover {
+	background: #593e34;
+}
+
+/* maxcdn */
+.social-icons.hover-colorful-BG li a.social-icon-maxcdn:hover {
+	background: #ea6d19;
+}
+
+/* renren */
+.social-icons.hover-colorful-BG li a.social-icon-renren:hover {
+	background: #3170a5;
+}
+
+/* trello */
+.social-icons.hover-colorful-BG li a.social-icon-trello:hover {
+	background: #176280;
+}
+
+/* pagelines */
+.social-icons.hover-colorful-BG li a.social-icon-pagelines:hover {
+	background: #235789;
+}
+
+/* skype */
+.social-icons.hover-colorful-BG li a.social-icon-skype:hover {
+	background: #1ca3db;
+}
+
+/* vimeo */
+.social-icons.hover-colorful-BG li a.social-icon-vimeo:hover {
+	background: #1ca3db;
+}
+
+/* github */
+.social-icons.hover-colorful-BG li a.social-icon-github:hover {
+	background: #235789;
+}
+
+/* google-plus */
+.social-icons.hover-colorful-BG li a.social-icon-google-plus:hover {
+	background: #9e3023;
+}
+
+/* linkedin */
+.social-icons.hover-colorful-BG li a.social-icon-linkedin:hover {
+	background: #0a6594;
+}
+
+/* pinterest */
+.social-icons.hover-colorful-BG li a.social-icon-pinterest-p:hover {
+	background: #a9272f;
+}
+
+/* stack-exchange */
+.social-icons.hover-colorful-BG li a.social-icon-stack-exchange:hover {
+	background: #235789;
+}
+
+/* tumblr */
+.social-icons.hover-colorful-BG li a.social-icon-tumblr:hover {
+	background: #3e5a70;
+}
+
+/* xing */
+.social-icons.hover-colorful-BG li a.social-icon-xing:hover {
+	background: #015a60;
+}
+
+/* flickr */
+.social-icons.hover-colorful-BG li a.social-icon-flickr:hover {
+	background: #db458f;
+}
+
+/* bitbucket */
+.social-icons.hover-colorful-BG li a.social-icon-bitbucket:hover {
+	background: #0e4a83;
+}
+
+/* facebook */
+.social-icons.hover-colorful-BG li a.social-icon-facebook:hover {
+	background: #395793;
+}
+
+/* twitter */
+.social-icons.hover-colorful-BG li a.social-icon-twitter:hover {
+	background: #1ca3db;
+}
+
+/* dribbble */
+.social-icons.hover-colorful-BG li a.social-icon-dribbble:hover {
+	background: #ce4b81;
+}
+
+/* yelp */
+.social-icons.hover-colorful-BG li a.social-icon-yelp:hover {
+	background: #d64132;
+}
+
+
+/* ### Colorful Icon Social Icons ----- */
+
+/* Colorful Icon Social Icons */
+.social-icons.colorful-icon {
+	margin-bottom: 0;
+}
+
+.social-icons.colorful-icon li {
+	margin: 0;
+}
+
+.social-icons.colorful-icon li a {
+	border-color: transparent;
+	background: transparent;
+}
+
+/* rss */
+.social-icons.colorful-icon li a.social-icon-rss i:before {
+	color: #ea6d19;
+}
+
+/* stack-overflow */
+.social-icons.colorful-icon li a.social-icon-stack-overflow i:before {
+	color: #ea6d19;
+}
+
+/* weibo */
+.social-icons.colorful-icon li a.social-icon-weibo i:before {
+	color: #cb3332;
+}
+
+/* youtube */
+.social-icons.colorful-icon li a.social-icon-youtube i:before {
+	color: #ad2c27;
+}
+
+/* bitcoin */
+.social-icons.colorful-icon li a.social-icon-bitcoin i:before {
+	color: #f7931b;
+}
+
+/* dropbox */
+.social-icons.colorful-icon li a.social-icon-dropbox i:before {
+	color: #0a6594;
+}
+
+/* foursquare */
+.social-icons.colorful-icon li a.social-icon-foursquare i:before {
+	color: #3170a5;
+}
+
+/* gittip */
+.social-icons.colorful-icon li a.social-icon-gittip i:before {
+	color: #593e34;
+}
+
+/* instagram */
+.social-icons.colorful-icon li a.social-icon-instagram i:before {
+	color: #593e34;
+}
+
+/* maxcdn */
+.social-icons.colorful-icon li a.social-icon-maxcdn i:before {
+	color: #ea6d19;
+}
+
+/* renren */
+.social-icons.colorful-icon li a.social-icon-renren i:before {
+	color: #3170a5;
+}
+
+/* trello */
+.social-icons.colorful-icon li a.social-icon-trello i:before {
+	color: #176280;
+}
+
+/* pagelines */
+.social-icons.colorful-icon li a.social-icon-pagelines i:before {
+	color: #235789;
+}
+
+/* skype */
+.social-icons.colorful-icon li a.social-icon-skype i:before {
+	color: #1ca3db;
+}
+
+/* vimeo */
+.social-icons.colorful-icon li a.social-icon-vimeo i:before {
+	color: #1ca3db;
+}
+
+/* github */
+.social-icons.colorful-icon li a.social-icon-github i:before {
+	color: #235789;
+}
+
+/* google-plus */
+.social-icons.colorful-icon li a.social-icon-google-plus i:before {
+	color: #9e3023;
+}
+
+/* linkedin */
+.social-icons.colorful-icon li a.social-icon-linkedin i:before {
+	color: #0a6594;
+}
+
+/* pinterest */
+.social-icons.colorful-icon li a.social-icon-pinterest-p i:before {
+	color: #a9272f;
+}
+
+/* stack-exchange */
+.social-icons.colorful-icon li a.social-icon-stack-exchange i:before {
+	color: #235789;
+}
+
+/* tumblr */
+.social-icons.colorful-icon li a.social-icon-tumblr i:before {
+	color: #3e5a70;
+}
+
+/* xing */
+.social-icons.colorful-icon li a.social-icon-xing i:before {
+	color: #015a60;
+}
+
+/* flickr */
+.social-icons.colorful-icon li a.social-icon-flickr i:before {
+	color: #db458f;
+}
+
+/* bitbucket */
+.social-icons.colorful-icon li a.social-icon-bitbucket i:before {
+	color: #0e4a83;
+}
+
+/* facebook */
+.social-icons.colorful-icon li a.social-icon-facebook i:before {
+	color: #395793;
+}
+
+/* twitter */
+.social-icons.colorful-icon li a.social-icon-twitter i:before {
+	color: #1ca3db;
+}
+
+/* dribbble */
+.social-icons.colorful-icon li a.social-icon-dribbble i:before {
+	color: #ce4b81;
+}
+
+/* yelp */
+.social-icons.colorful-icon li a.social-icon-yelp i:before {
+	color: #d64132;
+}
+
+
+/* ### Hover Colorful Icon Social Icons ----- */
+
+/* Hover Colorful Icon Social Icons */
+.social-icons.hover-colorful-icon {
+	margin-bottom: 0;
+}
+
+.social-icons.hover-colorful-icon li a:hover {
+	border-color: transparent;
+	background: transparent;
+}
+
+/* rss */
+.social-icons.hover-colorful-icon li a.social-icon-rss:hover i::after {
+	color: #ea6d19;
+}
+
+/* stack-overflow */
+.social-icons.hover-colorful-icon li a.social-icon-stack-overflow:hover i::after {
+	color: #ea6d19;
+}
+
+/* weibo */
+.social-icons.hover-colorful-icon li a.social-icon-weibo:hover i::after {
+	color: #cb3332;
+}
+
+/* youtube */
+.social-icons.hover-colorful-icon li a.social-icon-youtube:hover i::after {
+	color: #ad2c27;
+}
+
+/* bitcoin */
+.social-icons.hover-colorful-icon li a.social-icon-bitcoin:hover i::after {
+	color: #f7931b;
+}
+
+/* dropbox */
+.social-icons.hover-colorful-icon li a.social-icon-dropbox:hover i::after {
+	color: #0a6594;
+}
+
+/* foursquare */
+.social-icons.hover-colorful-icon li a.social-icon-foursquare:hover i::after {
+	color: #3170a5;
+}
+
+/* gittip */
+.social-icons.hover-colorful-icon li a.social-icon-gittip:hover i::after {
+	color: #593e34;
+}
+
+/* instagram */
+.social-icons.hover-colorful-icon li a.social-icon-instagram:hover i::after {
+	color: #593e34;
+}
+
+/* maxcdn */
+.social-icons.hover-colorful-icon li a.social-icon-maxcdn:hover i::after {
+	color: #ea6d19;
+}
+
+/* renren */
+.social-icons.hover-colorful-icon li a.social-icon-renren:hover i::after {
+	color: #3170a5;
+}
+
+/* trello */
+.social-icons.hover-colorful-icon li a.social-icon-trello:hover i::after {
+	color: #176280;
+}
+
+/* pagelines */
+.social-icons.hover-colorful-icon li a.social-icon-pagelines:hover i::after {
+	color: #235789;
+}
+
+/* skype */
+.social-icons.hover-colorful-icon li a.social-icon-skype:hover i::after {
+	color: #1ca3db;
+}
+
+/* vimeo */
+.social-icons.hover-colorful-icon li a.social-icon-vimeo:hover i::after {
+	color: #1ca3db;
+}
+
+/* github */
+.social-icons.hover-colorful-icon li a.social-icon-github:hover i::after {
+	color: #235789;
+}
+
+/* google-plus */
+.social-icons.hover-colorful-icon li a.social-icon-google-plus:hover i::after {
+	color: #9e3023;
+}
+
+/* linkedin */
+.social-icons.hover-colorful-icon li a.social-icon-linkedin:hover i::after {
+	color: #0a6594;
+}
+
+/* pinterest */
+.social-icons.hover-colorful-icon li a.social-icon-pinterest-p:hover i::after {
+	color: #a9272f;
+}
+
+/* stack-exchange */
+.social-icons.hover-colorful-icon li a.social-icon-stack-exchange:hover i::after {
+	color: #235789;
+}
+
+/* tumblr */
+.social-icons.hover-colorful-icon li a.social-icon-tumblr:hover i::after {
+	color: #3e5a70;
+}
+
+/* xing */
+.social-icons.hover-colorful-icon li a.social-icon-xing:hover i::after {
+	color: #015a60;
+}
+
+/* flickr */
+.social-icons.hover-colorful-icon li a.social-icon-flickr:hover i::after {
+	color: #db458f;
+}
+
+/* bitbucket */
+.social-icons.hover-colorful-icon li a.social-icon-bitbucket:hover i::after {
+	color: #0e4a83;
+}
+
+/* facebook */
+.social-icons.hover-colorful-icon li a.social-icon-facebook:hover i::after {
+	color: #395793;
+}
+
+/* twitter */
+.social-icons.hover-colorful-icon li a.social-icon-twitter:hover i::after {
+	color: #1ca3db;
+}
+
+/* dribbble */
+.social-icons.hover-colorful-icon li a.social-icon-dribbble:hover i::after {
+	color: #ce4b81;
+}
+
+/* yelp */
+.social-icons.hover-colorful-icon li a.social-icon-yelp:hover i::after {
+	color: #d64132;
+}
+
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 06 ) - Divider Spaces
+ *	-------------------------------------------------------------------------------
+ *  
+ *  Divider Spaces are divided to the following sections:
+ *
+ *	------
+ *  
+ */
+
+
+[class*="divider-space"].demo-show-only {
+	background: #eee;
+}
+
+.divider-space,
+.divider-space-140, 
+.divider-space-130, 
+.divider-space-120, 
+.divider-space-110, 
+.divider-space-100, 
+.divider-space-90, 
+.divider-space-80, 
+.divider-space-70, 
+.divider-space-60, 
+.divider-space-50, 
+.divider-space-40, 
+.divider-space-30, 
+.divider-space-20, 
+.divider-space-15, 
+.divider-space-10 {
+	display: block;
+	overflow: hidden;
+	clear: both;	
+}
+
+.divider-space-140 { height: 140px; }
+.divider-space-130 { height: 130px; }
+.divider-space-120 { height: 120px; }
+.divider-space-110 { height: 110px; }
+.divider-space-100 { height: 100px; }
+.divider-space-90 { height: 90px; }
+.divider-space-80 { height: 80px; }
+.divider-space-70 { height: 70px; }
+.divider-space-60 { height: 60px; }
+.divider-space-50 { height: 50px; }
+.divider-space-40 { height: 40px; }
+.divider-space-30 { height: 30px; }
+.divider-space-20 { height: 20px; }
+.divider-space-10 { height: 10px; }
+
+
+/*  Divider Space with Line */
+
+.divider-space-container {
+	display: block;
+	position: relative;
+	padding-bottom: 45px;	
+}
+
+.divider-space-with-line {
+	margin-bottom: 70px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	overflow: hidden;
+	position: relative;
+	top: 60px;
+	clear: both;	
+}
+
+
+/* Divider Space with Two Lines */
+
+.divider-space-with-two-lines {
+	height: 4px;
+	margin-bottom: 70px;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	display: block;
+	position: relative;
+	top: 60px;
+	clear: both;	
+}
+
+
+
+/**
+ *	-------------------------------------------------------------------------------
+ *	( 07 ) - DropCaps
+ *	-------------------------------------------------------------------------------
+ *  
+ *  BlockQuotes are divided to the following sections:
+ *
+ *	------
+ *
+ *	   |
+ *	   |-->  [ 1 ] - DropCaps Types
+ *	   |-->  [ 2 ] - DropCaps Rounded
+ *  
+ */
+
+
+/**
+ *  [ 1 ] - DropCaps Types 
+ *	========================
+ */
+
+.dropcap1 {
+	float: left;
+	display: block;
+	font-size: 38px;
+	font-weight: 500;
+	line-height: 32px;
+	margin: 1px 18px 8px 0;
+	color: #222;
+}
+
+.dropcap2, .dropcap3 {
+	float: left;
+	display: block;
+	font-size: 27px;
+	color: #eee;
+	background: #222;
+	width: 45px;
+	height: 45px;
+	line-height: 43px;
+	text-align: center;
+	margin: 5px 21px 0 0;
+	-webkit-border-radius: 3px;
+			border-radius: 3px;
+}
+
+.dropcap3 {
+	background: #eee;
+	color: #444;	
+}
+
+
+/**
+ *  [ 2 ] - DropCaps Rounded
+ *	==========================
+ */
+
+.dropcap2.rounded,
+.dropcap3.rounded {
+	width: 50px;
+	height: 50px;
+	line-height: 48px;
+	margin: 4px 19px 0 0;
+	border-radius: 1000px;
+}
+
